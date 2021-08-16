@@ -1,0 +1,27 @@
++ aws --version
+
+# Configura AWS
++ aws configure
+	++Access Key [AKIAIOSFODNN7EXAMPLE]
+	++Secret Access Key [wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY]
+	++Region name [us-east-2]
+	++Output format [json]
+
+# Lista los objetos en el bucket
+aws s3 ls s3://[bucket] 		#http://{s3game-level1}.s3-website.us-east-2.amazonaws.com/{level1.html}
+
+# Descarga un objeto del bucket
+aws s3 cp s3://[bucket]/[object]
+
+# Ve la matadata del objeto
+aws s3api head-object --bucket [bucket] --key [object]
+
+# Ver el tag del objeto 
+aws s3api get-object-tagging --bucket [bucket] --key [object]
+
+# Lista todas las versiones de los objetos
+aws s3api list-object-versions --bucket [bucket] 
+
+# Descargar una version especifica de un objeto
+aws s3api get-object --bucket [bucket] --key [object] --version-id [version-object]
+
