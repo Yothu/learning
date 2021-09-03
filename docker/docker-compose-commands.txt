@@ -1,0 +1,8 @@
++ docker-compose config
+#Check current docker-compose files syntax
+
++ docker-compose build 
+#Create a container based in current docker-compose file
+
++ docker-compose pull | [serviceName]
+#Create images of service/s named in current docker-compose file
