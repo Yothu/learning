@@ -5,6 +5,10 @@
     font-family: monospace;
   }
 
+  .yellow-text {
+    color: yellow !important;
+  }
+
   .pink-text {
     color: pink;
   }
@@ -20,6 +24,8 @@
   #cyan-text {
     color: cyan;
   }
+
+
 </style>
 
 <html>
@@ -32,6 +38,7 @@
     <h1 class="pink-text blue-text">Hello World with class pink and blue</h1>
     <h1 id="orange-text" class="pink-text blue-text">Hello World with id orange</h1>
     <h1 id="cyan-text" class="pink-text blue-text" style="color: white;">Hello World with inner style white</h1>
+    <h1 id="cyan-text" class="blue-text yellow-text" style="color: white;">Hello World with !important yellow</h1>
   </body>
 </html>
 
