@@ -1,8 +1,10 @@
 <style>
+
   body {
     background-color: lightgrey;
     color: green;
     font-family: monospace;
+    --color-brown: brown; /* variables go with -- in begining */
   }
 
   .yellow-text {
@@ -38,7 +40,8 @@
     <h1 id="cyan-text" class="blue-text yellow-text" style="color: white;">Hello World with !important yellow</h1>
     <h1 style="color: #1E90FF;">Hello World with hexadecimal color #1E90FF</h1>
     <h1 style="color: #F0F;">Hello World with abreviated hexa #F0F</h1>
-    <h1 style="color: rgb(0, 0, 0);">Hello World with rgb(0,0,0)</h1>
+    <h1 style="color: rgb(135, 10, 75);">Hello World with rgb(135, 10, 75)</h1>
+    <h1 style="color: var(--color-brown);">Hello World with css variables</h1>
   </body>
 </html>
 
