@@ -37,11 +37,33 @@
 		box-sizing: border-box;
 	}
 
+	.inner-image {
+		background-color: burlywood;
+		max-height: 100%;
+		max-width: 272px;
+		object-position: center bottom;
+		object-fit: contain;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		vertical-align: text-bottom;
+	}
+
+	.foogle-logo {
+
+	}
+
 	.search-bar {
 		background-color: lightyellow;
 		padding: 20px;
 		max-height: 160px;
 		box-sizing: border-box;
+		max-width: 584px;
+		width: auto;
+		position: relative;
+		padding-top: 6px;
+		margin: auto;
 
 	}
 
@@ -54,6 +76,10 @@
 		background-color: lightsteelblue;
 		box-sizing: border-box;
 		flex-shrink: 0;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		max-width: 672px;
 	}
 
 	.first-inner-footer {
@@ -82,8 +108,16 @@
 			<div class="right-inner-header"></div>
 		</div>
 	</div>
-	<div class="image">Image</div>
-	<div class="search-bar">Search Bar</div>
+	<div class="image">
+		<div class="inner-image">
+			<img class="foogle-logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="Foogle Image" width="272" height="92">
+		</div>
+	</div>
+	<div class="search-bar">
+		<form>
+			<input type="text" placeholder="What are you searching?" width="523" height="39">
+		</form>
+	</div>
 	<div class="separator">Separator</div>
 	<div class="footer">
 		<div class="first-inner-footer">First Inner Footer</div>
