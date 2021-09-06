@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+	:root{
+
+	}
+
+	body {
+		font-size: 14px;
+		font-family: Arial, sans-serif;
+	}
+
+
+	.header {
+		background-color: lightgreen;
+		
+		padding: 6px;
+		align-items: center;
+		height: 60px;
+		box-sizing: border-box;
+	}
+
+	.inner-header {
+		background-color: lime;
+		position:relative;
+		height: 48px;
+		float: right;
+	}	
+
+	.image {
+		background-color: lightskyblue;
+		align-items: center;
+		min-height: 150px;
+		max-height: 290px;
+		height: calc(100% - 560px);
+
+		box-sizing: border-box;
+	}
+
+	.search-bar {
+		background-color: lightyellow;
+		padding: 20px;
+		max-height: 160px;
+		box-sizing: border-box;
+
+	}
+
+	.separator {
+		background-color: lightpink;
+		flex-grow: 1;
+	}
+
+	.footer {
+		background-color: lightsteelblue;
+		box-sizing: border-box;
+		flex-shrink: 0;
+	}
+
+	.first-inner-footer {
+
+	}
+
+	.second-inner-footer {
+		justify-content: space-evenly;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<title>Google Homepage</title>
+</head>
+<body>
+	<div class="header">
+		<ul>
+			<li><a href="#google">Google</a></li>
+			<li><a href="#images">Images</a></li>
+		</ul>
+		<div class="inner-header">
+			<div class="right-inner-header"></div>
+		</div>
+	</div>
+	<div class="image">Image</div>
+	<div class="search-bar">Search Bar</div>
+	<div class="separator">Separator</div>
+	<div class="footer">
+		<div class="first-inner-footer">First Inner Footer</div>
+		<div class="second-inner-footer">Second Inner Footer</div>
+	</div>
+</body>
+</html>
