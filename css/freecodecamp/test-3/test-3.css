@@ -1,0 +1,30 @@
+:root {                             /* variables defined here are accessible to all */
+    --color-brown: brown;       /* variables go with -- in begining */
+}
+
+body {
+    background-color: lightgrey;
+    color: green;
+    font-family: monospace;
+    --color-brown: lightblue;
+}
+
+.yellow-text {
+    color: yellow !important;
+}
+
+.pink-text {
+    color: pink;
+}
+
+.blue-text {
+    color:  blue;
+}
+
+#orange-text {
+    color: orange;
+}
+
+#cyan-text {
+    color: cyan;
+}
