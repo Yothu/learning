@@ -2,18 +2,36 @@
 <html>
     <head>
         <title>Test_1</title>
+        <style>
+            #animalsDiv {
+                background-color: lightgreen;
+            }
+            
+        </style>
     </head>
     <body>
-       <h1 id="header_1">Hello World!</h1>
-       <select id="selector">
-           <option value="red">Red</option>
-           <option value="blue">Blue</option>
-           <option value="green">Green</option>
-           <option value="gray">Gray</option>
-           <option value="black">Black</option>
-       </select><br> 
-       <label for="1">Cat</label>
-       <input id="1" type="checkbox" value="cat" name="Cat">
+        <h1 id="header_1">Hello World!</h1>
+        <div id="animalsDiv">
+            <select id="selector">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="gray">Gray</option>
+                <option value="black">Black</option>
+            </select><br><br>
+
+            <label for="catRadio">
+                <input id="catRadio" type="radio" value="cat" name="animals">Cat
+            </label><br>
+            <label for="dogRadio">
+                <input id="dogRadio" type="radio" value="dog" name="animals">Dog
+            </label><br>
+            <label for="birdRadio">
+                <input id="birdRadio" type="radio" value="bird" name="animals">Bird
+            </label><br><br>
+            <button id="bt">Submit</button> 
+        </div>
+
     </body>
-    <script></script>
+    <script src="./test_1.js"></script>
 </html>
