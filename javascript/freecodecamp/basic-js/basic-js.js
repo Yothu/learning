@@ -38,3 +38,36 @@ ad /= 2;            // Self division
 var ae = 3.4;       // Decimals
 
 var remainder = 11 % 3; // Remainder of a division
+
+/* BASIC STRINGS */
+var myStr = "I am a \"double quoted\" string inside \"double quotes\".";    // escaping literal quotes in string
+var myStr2 = '<a href="http://www.example.com" target="_blank">Link</a>';    // Single quoted string
+
+var myStr3 = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+/* 
+
+\'	single quote                cat:
+\"	double quote                        FirstLine
+\\	backslash                               \SecondLine
+\n	newline                             ThirdLine
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+
+*/
+
+var myStr4 = "This is the start." + " " + "This is the end.";   // Concatenating strings
+
+var myStr5 = "This is the first sentence. ";                    // Self Concatenating
+myStr5 += "This is the second sentence.";
+
+var myName2 = "David";
+var myStr6 = "My name is " + myName + " and I am well!";        // Construction strings with variables
+
+var someAdjective = "izi";                                      // Appending variables to strings
+var myStr7 = "Learning to code is ";
+
+myStr7 += someAdjective;
+
