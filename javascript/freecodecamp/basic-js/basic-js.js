@@ -71,3 +71,11 @@ var myStr7 = "Learning to code is ";
 
 myStr7 += someAdjective;
 
+myStr.length            // Returns integer with a string's length
+
+myStr[0]                    // Returns a character of a specific position. 0 to length-1
+myStr[myStr.length - 1]     // Returns the last character of a string
+
+//myStr[0] = "D";         // A string is immutable, so you cant change only a part of it, it has to be the hole of it
+myStr = "Hello World."
+
