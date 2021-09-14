@@ -1,3 +1,16 @@
+/* INDEX */
+
+// BASIC VARAIBLE ASSIGNMENT
+// BASIC MATH
+// BASIC STRINGS
+// BASIC ARRAYS
+// BASIC FUNCTIONS
+// BASIC CONDITIONS
+
+
+
+
+
 // This is a one line comment
 
 /* This is 
