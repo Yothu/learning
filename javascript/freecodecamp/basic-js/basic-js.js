@@ -93,3 +93,49 @@ array1.unshift(["Paul", 35]);                   // Inserts an element into the f
 bruh = array1.pop();                            // Removes the last element from the array
 bruh = array1.shift();                          // Removes the first element from the array
 
+/* BASIC FUNCTIONS */
+
+function functionName () {                      // Basic Parameterless Function Statement
+    console.log("Hello World!");
+}
+
+functionName();                                 // Basic Parameterless Function Calling
+
+
+
+function functionWithArgs (param1, param2) {    
+    console.log(param1 + param2);
+}
+
+functionWithArgs(1, 2);
+
+
+
+
+var global = 1;
+function f1() {
+    global = 5;                                     // Declaring a variable without var, let or const makes the variable a global one
+}
+// It changes the value of the outer one
+
+var clothes = "pants";
+function f2(){
+    var clothes = "globes";                         // Declaring a variable like this will only change the inner one
+}
+
+
+
+function returningFunction(argument){               // Basic returning function Statement
+    return argument * 2;
+}
+
+value = returningFunction(2);                       // Basic returning function Calling
+
+
+
+function returnless() {
+    global += 1;
+}
+returnless();   //undefined                         // Functions without return, return a undefined value
+
+
