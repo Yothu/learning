@@ -186,3 +186,23 @@ if (condition) {                                    // Basic IF-ELSE IF-ELSE sta
     
 }
 
+switch (someVariable){                              // Basic switch statement
+    case 1:
+    case 2:
+    case 3:
+        console.log("someVariable is integer 1, 2 or 3");
+        break;
+    case "a":
+        console.log("someVariable is string \"a\"");
+        break;
+    case 45:
+        console.log("someVariable is integer 45");
+        break;
+    case true:
+        console.log("someVariable is boolean true");
+        break;
+    default:
+        console.log("Hello World");
+        break;
+}
+
