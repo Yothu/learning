@@ -88,6 +88,8 @@ var array3 = array1[0];                         // Access array data with indexe
 array1[1] = 12;                                 // Modify data of array with indexes
 array2[1][1];                                   // Access multi-dimentinal data with indexes
 
-array1.push(["dog",3]);                         // Inserts data into the last position of the array
-bruh = array1.pop();                            // Removes data from the last position of the array
+array1.push(["dog",3]);                         // Inserts an element into the last position of the array
+array1.unshift(["Paul", 35]);                   // Inserts an element into the first position of the array
+bruh = array1.pop();                            // Removes the last element from the array
+bruh = array1.shift();                          // Removes the first element from the array
 
