@@ -71,11 +71,23 @@ var myStr7 = "Learning to code is ";
 
 myStr7 += someAdjective;
 
-myStr.length            // Returns integer with a string's length
+myStr.length                // Returns integer with a string's length
 
 myStr[0]                    // Returns a character of a specific position. 0 to length-1
 myStr[myStr.length - 1]     // Returns the last character of a string
 
-//myStr[0] = "D";         // A string is immutable, so you cant change only a part of it, it has to be the hole of it
+//myStr[0] = "D";           // A string is immutable, so you cant change only a part of it, it has to be the hole of it
 myStr = "Hello World."
+
+/* BASIC ARRAYS */
+
+var array1 = ["string", 43];                    // Array with a string and a number
+var array2 = [["string1", 1],["string2", 2]]    // Nested arrays
+
+var array3 = array1[0];                         // Access array data with indexes
+array1[1] = 12;                                 // Modify data of array with indexes
+array2[1][1];                                   // Access multi-dimentinal data with indexes
+
+array1.push(["dog",3]);                         // Inserts data into the last position of the array
+bruh = array1.pop();                            // Removes data from the last position of the array
 
