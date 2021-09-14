@@ -139,3 +139,37 @@ function returnless() {
 returnless();   //undefined                         // Functions without return, return a undefined value
 
 
+/* BASIC CONDITIONS */
+
+if (someVariable == true) {                                    // Basic IF statement
+    
+}
+
+// =    asignment
+// ==   equal comparision
+// !=   inequal comparison
+// ===  strict equal comparison
+// !==  strict inequal comparison
+
+// >    over
+// <    under
+// >=   over or equal
+// <=   under or equal
+
+// &&   and
+// ||   or
+
+if (condition) {                                    // Basic IF-ELSE statement
+    
+} else {
+    
+}
+
+if (condition) {                                    // Basic IF-ELSE IF-ELSE statement
+    
+} else if (condition) {
+    
+} else {
+    
+}
+
