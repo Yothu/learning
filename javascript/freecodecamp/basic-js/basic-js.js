@@ -6,6 +6,8 @@
 // BASIC ARRAYS
 // BASIC FUNCTIONS
 // BASIC CONDITIONS
+// BASIC OBJECTS
+// BASIC LOOPS
 
 
 
@@ -358,4 +360,20 @@ function updateRecords(records, id, prop, value) {
 }
   
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+/* BASIC LOOPS */
+
+var i = 5;
+while (i >= 0) {                                            // Basic WHILE statement
+    array1.push(i);
+    i--;
+}
+
+for(var i = 1; i <= 5; i++){                                // Basic FOR statement
+    array2.push(i);
+}
+
+do {                                                        // Basic DO-WHILE statement
+    array3.push(i);
+} while (i < 0);
 
