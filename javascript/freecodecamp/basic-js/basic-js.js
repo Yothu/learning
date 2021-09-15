@@ -206,3 +206,156 @@ switch (someVariable){                              // Basic switch statement
         break;
 }
 
+/* BASIC OBJECT */
+
+var object = {                                      // Basic Object Statement
+    name: "Roberto",
+    age: 23,
+    lives: true,
+    dicks:  ["Big", "Bigger"],
+    "guata": "Super Gorda"
+};
+
+objectName = object.name;                           // Access an object atribute, used when atribute name is known
+
+panza = object["guata"];                            // Access an object atribute, used when unknown
+
+a = "guata";
+panza = object[a];
+
+
+object.age = 12;                                    // Set an objects atribute value
+object["age"] = 12;
+
+object.lazy = "full";                               // Add an atribute to an object
+object["lazy"] = "full";
+
+delete object.lazy;                                 // Delete an atribute of an object
+delete object["lazy"];
+
+//----------------------------------------------------------
+
+function phoneticLookup(val) {
+    var result = "";
+
+    var lookup = {
+      "alpha":    "Adams",
+      "bravo":    "Boston",
+      "charlie":  "Chicago",
+      "delta":    "Denver",
+      "echo":     "Easy",
+      "foxtrot":  "Frank"
+    };
+  
+    result = lookup[val];
+    return result;
+  }
+
+//------------------------------------------------------------
+
+object.hasOwnProperty(atributeName);                // Verifies if an object has a determined atribute
+
+var myMusic = [                                     // An array with 2 objects inside
+    {
+        "artist":       "Billy Joel",
+        "title":        "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true
+    }, 
+    {
+        "artist":       "Rhapsody",
+        "title":        "Dawn of Victory",
+        "release_year": 2000,
+        "formats":  [
+            "CD",
+            "LP"
+        ]
+    }
+];
+
+//----------------------------------------------------------------------------
+
+var myStorage = {                                   // Nested objects
+    "car": {
+        "inside": {
+            "glove box": "maps",                        // This atribute to extract
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+
+//--------------------------------------------------------------------------------
+
+var myPlants = [                                    // Nested Arrays and objects
+    {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type: "trees",
+        list: [
+            "fir",
+            "pine",                                     // This element to extract
+            "birch"
+        ]
+    }
+];
+
+var secondTree = myPlants[1].list[1];
+
+//----------------------------------------------------------------------------
+
+// Setup
+var recordCollection = {
+    2548: {
+      albumTitle: 'Slippery When Wet',
+      artist: 'Bon Jovi',
+      tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+      albumTitle: '1999',
+      artist: 'Prince',
+      tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+      artist: 'Robert Palmer',
+      tracks: []
+    },
+    5439: {
+      albumTitle: 'ABBA Gold'
+    }
+};  
+
+function updateRecords(records, id, prop, value) {
+    if (value != ""){
+        if(prop != "tracks"){
+            records[id][prop] = value;
+        } else{
+            if(records[id].hasOwnProperty("tracks")){
+                records[id][prop].push(value);
+            } else{
+                records[id][prop] = [value];
+            }
+        }
+    } else{
+        delete records[id][prop];
+    }
+    return records;
+}
+  
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
