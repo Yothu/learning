@@ -377,3 +377,22 @@ do {                                                        // Basic DO-WHILE st
     array3.push(i);
 } while (i < 0);
 
+/* COMMON METHODS AND FUNCTIONS */
+
+let num = Math.random();                                    // Random number [0,1)
+
+Math.floor();                                               
+
+parseInt("23");                                             // Transforms a string to a integer
+parseInt("1001101",2);                                      // Transforms a string to a integer, with different number base
+
+function f11 (){
+    return a >= b ? "a is greater than b" : "a is not greater than b";  // Simple way to do a IF-ELSE stetement
+}
+
+function f12(){                                                         // IF-ELSEIF-ELSE
+    return (num > 0) ? "positive"
+    :   (num < 0) ? "negative"
+    :   "zero";
+}
+
