@@ -1,5 +1,18 @@
 /* ES6 */
 
+/* INDEX */
+
+// LET AND CONST VARIABLES
+// ARROW FUNCTION
+// DINAMIC FUNCTION ARGUMENTS
+// DESTRUCTURING
+// TEMPLATE LIBERALS
+// CLASSES
+// EXPORT AND IMPORT
+// PROMISES
+
+/* LET AND CONST VARIABLES */
+
 let variable = 12;          // if declared inside IF's, FOR's etc... outside of them they will not exist
 
 const SENTENCE = "ligma, ligma what?, ligmadic";    // const are read only once created
@@ -15,7 +28,7 @@ const MATH_CONSTANTS = {            // just using const on an object doesn't mak
 
 Object.freeze(MATH_CONSTANTS);
 
-//-----------------------------------------------------------------------
+/* ARROW FUNCTION */
 
 const myFunc = function() {         // Assigning a function to a variable
     const myVar = "value";
@@ -31,12 +44,16 @@ const myFunc = () => {              // Assigning a function to a variable, using
 const myFunc = (arguments) => arguments * "value";       // The same as the above, use this only when the body of the function is only a return
 const myFunc2 = (num = 3) => num * 2;                    // With default parameters values
 
+/* DINAMIC FUNCTION ARGUMENTS */
+
 function howManyArgs(...args){                                  // This parameters allows you to pass a dinamic number of arguments
     return "You have passed " + args.length + " arguments."     // in side the function is identifeid as an unpacked array
 }
 
 // array => [1,2,3,4,5]     Normal
 // ..array => 1,2,3,4,5     Unpacked
+
+/* DESTRUCTURING */
 
 const {PI, ONE} = MATH_CONSTANTS;                       // Extract an objects atributes values by DESTRUCTURING
 const {PI: piNumber, ONE: numberOne} = MATH_CONSTANTS;  // Assign variables from objects by DESTRUCTURING
@@ -81,8 +98,7 @@ const stats = {
   
 const half = ({max, min}) => (max + min) / 2.0;     // Destructuring an object to use as function atributes
 
-//----------------------------------------------------------
-
+/* TEMPLATE LIBERALS */
 
 const texto = `The best aircraft is the ${AIRCRAFTS[2]}`;   // An example of TEMPALTE LIBERALS, must be created using `, not " or '.
 
@@ -93,7 +109,7 @@ const objeto = {                                            // Creating a functi
     }
 };
 
-//-----------------------------------------------------------
+/* CLASSES */
 
 class className {                                           // Basic way to declare a CLASS
     constructor(construcArg){                                   // a CLASS Constructor
@@ -103,3 +119,72 @@ class className {                                           // Basic way to decl
 
 new className ("Pera");                                     // Class declaration
 
+class Thermostat{
+    constructor(F){
+      this.F = F;
+    }
+  
+    get temperature(){                                      // get data of object
+      return 5/9 * (this.F - 32);
+    }
+  
+    set temperature(C){                                     // set data into object
+      this.F = C * 9.0 / 5 + 32;
+    }
+}
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+/* EXPORT AND IMPORT */
+
+export const uppercaseString = (string) => {                // Export functions using method 1
+    return string.toUpperCase();
+}
+  
+const lowercaseString = (string) => {
+    return string.toLowerCase()
+}
+  
+export {lowercaseString};                                   // Export functions using method 2
+
+import {add, substract} from './import_file.js';            // Import especific funtions
+import * as mathFunctions from './import_file.js';          // Import all 
+
+export default function add(x, y){                          // Default function to be exported, only one can use default
+    return x + y;
+}
+
+import add2 from './import_file.js';                        // Import the default function, doesn't use {} and add2 is a just a modifable name to be used in the file
+
+
+// HTML - <script type="module" src="index.js"></script>            // import JavaScript code into HTML 
+
+/* PROMISES */ 
+
+const myPromise = new Promise((resolve, reject) => {});     // Basic Promise statement
+
+// It has 3 states
+//  pending
+//  fulfilled
+//  rejected
+
+const myPromise2 = new Promise((resolve, reject) => {
+    let booleano;
+
+    if (booleano) {
+        resolve("Si men, ta nois");
+    } else {
+        reject("No man, gg");
+    }
+});
+
+myPromise2.then(result => {             // How to handdle a promise's resolve
+    console.log(result);
+});
+
+myPromise2.catch(error => {             // How to handdle a promise's reject
+    console.log(error);
+})
