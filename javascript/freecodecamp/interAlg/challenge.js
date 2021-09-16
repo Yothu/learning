@@ -154,6 +154,5 @@ function changeEntities(char){
     }
 }
   
-  convertHTML("Dolce & Gabbana");
+convertHTML("Dolce & Gabbana");
 
-  
