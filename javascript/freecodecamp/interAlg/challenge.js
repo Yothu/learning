@@ -156,3 +156,26 @@ function changeEntities(char){
   
 convertHTML("Dolce & Gabbana");
 
+/* SUM ALL PRIMES */
+//  https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-primes
+
+function sumPrimes(num) {
+    let div = 0;
+    let total = 0;
+
+    for(let i = 2;i<=num;i++){
+      for(let j = 1;j<=i;j++){
+        if(i%j==0){
+          div++;
+        }
+      }
+      if(div == 2){
+        total += i;
+      }
+      div = 0;
+    }
+    return total;
+}
+  
+sumPrimes(10);
+
