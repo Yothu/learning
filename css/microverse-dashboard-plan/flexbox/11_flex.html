@@ -7,18 +7,50 @@
   <title>Document</title>
 </head>
 <style>
+  .container {
+    display: flex;
+  }
+
+  .box {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .box1 {background: red;}
+  .box2{background: blue;}
+  .box3{background: green;}
+  .box4{background: yellow;}
+  .box5{background: orange;}
+  .box6{background: purple;}
+  .box7{background: cyan;}
+  .box8{background: gray;}
+
+  .box2 {
+    flex-basis: 400px;
+    flex-grow: 2;
+  }
+
+  .box3 {
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 2;
+  }
+  
+
 
 </style>
 <body>
   <var class="container">
-    <var class="box box1">asd1</var>
-    <var class="box box2">asdasd2</var>
-    <var class="box box3">3</var>
-    <var class="box box4">asd4</var>
+    <!-- <var class="box box1">asd1</var> -->
+    <var class="box box2">one DF</var>
+    <var class="box box3">two DF2</var>
+    <!-- <var class="box box4">asd4</var>
     <var class="box box5">a5</var>
     <var class="box box6">asdasdsd6</var>
     <var class="box box7">a7</var>
-    <var class="box box8">asdsd8</var>
+    <var class="box box8">asdsd8</var> -->
   </var>
 </body>
 </html>
