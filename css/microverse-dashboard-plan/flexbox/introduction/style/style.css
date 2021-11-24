@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  border: 10px solid goldenrod;
+  height: 100vh;
+}
+
+.box1 {
+  background: blue;
+}
+
+.box2 {
+  background: coral;
+}
+
+.box3 {
+  background: cyan;
+}
+
+.box4 {
+  background: greenyellow;
+}
+
+.box5 {
+  background: green;
+}
+
+.box6 {
+  background: gray;
+}
+
+.box7 {
+  background: pink;
+}
+
+.box8 {
+  background: salmon;
+}
+
+.box9 {
+  background: seagreen;
+}
+
+.box10 {
+  background: yellow;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rbba(0,0,0,0.1);
+  padding: 10px;
+}
+
