@@ -1,14 +1,15 @@
 .container {
   display: flex;
   border: 10px solid goldenrod;
-  height: 100vh;
-  flex-direction: row-reverse;
+  min-height: 100vh;
+  flex-direction: row;
     /* direction of the flexbox, 
       row (default)
       row-reverse
       column
       column-reverse
     */
+  flex-wrap: wrap;
 }
 
 .box1 { background: blue; }
@@ -28,5 +29,13 @@
   text-align: center;
   text-shadow: 4px 4px 0 rbba(0,0,0,0.1);
   padding: 10px;
+  width: 33.33333333333333vh;
 }
 
+.box3 {
+  order: 1;
+}
+
+.box8 {
+  order: 2;
+}
